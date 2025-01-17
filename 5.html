@@ -71,8 +71,13 @@ table {
     src: url("SourceCodeVariable-Roman.otf");
 }
 @font-face{
-    font-family: pelinka;
+    font-family: pelinkacon;
     src: url("Pelinka-CondensedBold.otf");
+}
+
+@font-face{
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
 }
 body{
   
@@ -81,7 +86,7 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     font-family: pelinka;
     src: url("Pelinka-CondensedBold");
     font-size: 12pt;
@@ -100,19 +105,19 @@ img{
 }
 
 .text{
-    font-family: pelinka;
+    font-family: pelinkacon;
     src: url("Pelinka-CondensedBold");
     padding: 40px;
     padding-left: 60px;
-    color: darkslategray;
+    color: black;
 }
 
 .absolute{
     position:fixed;
     display: inline block;
     width: 100%;
-    font-family: source;
-    src: url("SourceCodeVariable-Roman.otf");
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
     font-size: 12pt;
 }
 
@@ -130,7 +135,15 @@ li {
 li a {
   display: block;
   padding: 25px;
-  color: grey;
+  color: black;
+}
+
+@media (min-width:700px) {
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    }
 }
 
 
@@ -140,7 +153,7 @@ li a {
 <body>
     <div class="absolute">
         <ul>
-            <li style="float:left"><a class="active" href="index.html">☑</a></li>
+            <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
             <li style="float:right"><a class="active" href="about.html">™</a></li>
         </ul>
     </div>
@@ -149,23 +162,11 @@ li a {
     <div class="grid">
 
     <div class="row">
-        <img src="f1.png" alt="">
+        <img src="wt.png" alt="">
     </div>
-
-    <div class="row">
-        <img src="f2.png" alt="">
-    </div>
-
-    <div class="row">
-        <img src="f3.png" alt="">
-    </div>  
-
-    <div class="row">
-        <img src="f4.png" alt="">
-    </div>  
 
     <div class="text">
-    Archive of leisure spaces, experiment in copying
+    Identity design for paperbound 
     </div> 
 
 

@@ -71,8 +71,13 @@ table {
     src: url("SourceCodeVariable-Roman.otf");
 }
 @font-face{
-    font-family: pelinka;
+    font-family: pelinkacon;
     src: url("Pelinka-CondensedBold.otf");
+}
+
+@font-face{
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
 }
 body{
   
@@ -81,14 +86,12 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     font-family: pelinka;
     src: url("Pelinka-CondensedBold");
     font-size: 12pt;
     background-color: white;
     padding: 10 px white;
-    
- 
 }
 
 .row{
@@ -107,15 +110,15 @@ img{
     padding: 40px;
     padding-left: 60px;
     color: black;
-    background-color: lightgray;
+    background-color: white;
 }
 
 .absolute{
     position:fixed;
     display: inline block;
     width: 100%;
-    font-family: source;
-    src: url("SourceCodeVariable-Roman.otf");
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
     font-size: 12pt;
 }
 
@@ -133,7 +136,15 @@ li {
 li a {
   display: block;
   padding: 25px;
-  color: grey;
+  color: black;
+}
+
+@media (min-width:700px) {
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    }
 }
 
 
@@ -143,7 +154,7 @@ li a {
 <body>
     <div class="absolute">
         <ul>
-            <li style="float:left"><a class="active" href="index.html">☑</a></li>
+            <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
             <li style="float:right"><a class="active" href="about.html">™</a></li>
         </ul>
     </div>
@@ -152,11 +163,11 @@ li a {
     <div class="grid">
 
     <div class="row">
-        <img src="i3.jpg" alt="">
+        <img src="m.png" alt="">
     </div>
 
     <div class="text">
-        Thesis design for Dimme van Harten
+        Sketches of thesis design for Dimme van Harten
     </div>  
 
     <div class="row">

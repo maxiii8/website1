@@ -66,13 +66,20 @@ table {
     font-family: f18;
     src: url("F1.8-Regular.otf");
 }
+
 @font-face{
     font-family: source;
     src: url("SourceCodeVariable-Roman.otf");
 }
+
+@font-face{
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold.otf");
+}
+
 @font-face{
     font-family: pelinka;
-    src: url("Pelinka-CondensedBold.otf");
+    src: url("Pelinka-Bold.otf");
 }
 body{
   
@@ -81,7 +88,7 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     font-family: pelinka;
     src: url("Pelinka-CondensedBold");
     font-size: 12pt;
@@ -100,19 +107,19 @@ img{
 }
 
 .text{
-    font-family: pelinka;
+    font-family: pelinkacon;
     src: url("Pelinka-CondensedBold");
     padding: 40px;
     padding-left: 60px;
-    color: darkslategray;
+    color: black;
 }
 
 .absolute{
     position:fixed;
     display: inline block;
     width: 100%;
-    font-family: source;
-    src: url("SourceCodeVariable-Roman.otf");
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
     font-size: 12pt;
 }
 
@@ -130,7 +137,15 @@ li {
 li a {
   display: block;
   padding: 25px;
-  color: grey;
+  color: black;
+}
+
+@media (min-width:700px) {
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    }
 }
 
 
@@ -140,7 +155,7 @@ li a {
 <body>
     <div class="absolute">
         <ul>
-            <li style="float:left"><a class="active" href="index.html">☑</a></li>
+            <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
             <li style="float:right"><a class="active" href="about.html">™</a></li>
         </ul>
     </div>
