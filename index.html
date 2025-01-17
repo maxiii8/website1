@@ -73,8 +73,13 @@ table {
 }
 
 @font-face{
-    font-family: sono;
+    font-family: pelinkacon;
     src: url("Pelinka-CondensedBold.otf");
+}
+
+@font-face{
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
 }
 
 body{
@@ -84,10 +89,7 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 50% 1fr;
-    font-family: f18;
-    src: url("F1.8-Regular.otf");
-    font-size: 12pt;
+    grid-template-columns: 1fr;
     background-color: white;
     padding: 10 px white;
 }
@@ -100,16 +102,15 @@ img{
     width: 100%;
     height: auto;
     padding-right: 200px;
-
 }
 
 .text{
-    font-family: pelinka;
-    src: url("pelinka-bold.otf");
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold.otf");
     padding-top: 40px;
-    padding-left: 200px;
     color: black;
-    background-color: lightgray;
+    background-color: white;
+    text-align: center;
 }
 
 .absolute{
@@ -117,8 +118,8 @@ img{
     position:fixed;
     display: inline block;
     width: 100%;
-    font-family: source;
-    src: url("SourceCodeVariable-Roman.otf");
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
     font-size: 12pt;
 }
 
@@ -139,6 +140,14 @@ li a {
   color: black;
 }
 
+@media (min-width:700px) {
+    .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    }
+}
+
 
         
     </style>
@@ -146,18 +155,13 @@ li a {
 <body>
     <div class="absolute">
         <ul>
-            <li style="float:left"><a class="active" href="index.html">☑</a></li>
-            <li style="float:right"><a class="active" href="start.html">™</a></li>
+            <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
+            <li style="float:right"><a class="active" href="info.html">™</a></li>
         </ul>
     </div>
  
     
     <div class="grid">
-
-
-    <div class="text">
-    QUE MONO 
-    </div>  
             
     <div class="row">
     <a href="1.html">
@@ -166,18 +170,18 @@ li a {
     </div>
 
     <div class="text">
-    TRANSLATION 
+    QUE MONO       
     </div>  
         
     <div class="row">
     <a href="2.html">
-    <img src="x1.jpg" alt="">
+    <img src="bw.png" alt="">
     </a>
     </div>
 
     <div class="text">
-    VAV GRAD SHOW 
-    </div>  
+        TRANSLATION 
+        </div>   
 
     <div class="row">
         <a href="3.html">
@@ -186,17 +190,37 @@ li a {
     </div>
 
     <div class="text">
-    REAL FIT
-     </div>
+    VAV GRAD SHOW 
+    </div> 
 
     <div class="row">
         <a href="4.html">
-        <img src="i3.jpg" alt="">
+        <img src="m.png" alt="">
         </a>
     </div>  
 
     <div class="text">
-    COPY
+    REAL FIT
+    </div>
+
+    <div class="row">
+        <a href="6.html">
+        <img src="cl3.png" alt="">
+        </a>
+    </div>  
+
+    <div class="text">
+    BABY VOMIT
+    </div>  
+
+    <div class="row">
+        <a href="5.html">
+        <img src="wt.png" alt="">
+        </a>
+    </div>  
+
+    <div class="text">
+    PAPERBOUND
     </div>  
 
     <div class="row">
@@ -204,6 +228,14 @@ li a {
         <img src="f3.png" alt="">
         </a>
     </div>  
+
+    <div class="text">
+    COPY
+    </div>  
+
+    <div class="text">
+    
+    </div> 
 
 
 </body>
