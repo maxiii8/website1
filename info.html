@@ -66,10 +66,12 @@ table {
     font-family: f18;
     src: url("F1.8-Regular.otf");
 }
+
 @font-face{
     font-family: source;
     src: url("SourceCodeVariable-Roman.otf");
 }
+
 @font-face{
     font-family: pelinkacon;
     src: url("Pelinka-CondensedBold.otf");
@@ -80,6 +82,7 @@ table {
     src: url("Pelinka-Bold.otf");
 }
 
+
 body{
   
 
@@ -88,37 +91,47 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 1fr;
-    font-family: pelinkacon;
-    src: url("Pelinka-CondensedBold");
-    font-size: 12pt;
     background-color: white;
     padding: 10 px white;
-    
- 
 }
 
 .row{
     padding: 40px;
-    padding-left: 60px;
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
 .text{
     font-family: pelinkacon;
-    src: url("Pelinka-CondensedBold");
-    padding-left: 60px;
-    padding-top: 10px;
+    src: url("Pelinka-CondensedBold.otf");
+    padding-top: 42px;
+    padding-left: 200px;
+    color: black;
+    background-color:white;
+}
+
+.text1{
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
+    padding-top: 20px;
+    padding-left: 200px;
     color: black;
     background-color: white;
-    grid-column-start: 1;
-    grid-column-end: 2;
+}
+.text2{
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold.otf");
+    padding-top: 20px;
+    padding-left: 200px;
+    color: black;
+    background-color:white;
 }
 
 .absolute{
+    padding-top: 13px;
     position:fixed;
     display: inline block;
     width: 100%;
@@ -147,11 +160,9 @@ li a {
 @media (min-width:700px) {
     .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr;
     }
 }
-
 
         
     </style>
@@ -160,38 +171,52 @@ li a {
     <div class="absolute">
         <ul>
             <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
-            <li style="float:right"><a class="active" href="about.html">™</a></li>
+            <li style="float:right"><a class="active" href="info.html">™</a></li>
         </ul>
     </div>
  
     
     <div class="grid">
 
-    <div class="row">
-        <img src="z1.jpg" alt="">
+
+    <div class="text">
+    Max Kessel is a graphic designer and multi-disciplinary artist, currently based in Brussel. 
+    </div>  
+
+    <div class="text">
+    Feel free to get in contact for graphic design work.
+    </div>  
+
+    <div class="text1">
+    CONTACT
+    </div> 
+
+    <div class="text2">
+    makskessel@outlook.com
+    </div> 
+
+    <div class="text1">
+    STUDIES
+    </div>  
+
+    <div class="text2">
+    2019-2022 BA graphic design Gerrit Rietveld Academie (NL)
+    </div> 
+    <div class="text2">
+    2023-2025 MA fine arts LUCA school of arts (BE)
     </div>
 
-    <div class="row">
-        <img src="z2.jpg" alt="">
-    </div>  
-
-    <div class="row">
-        <img src="z3.jpg" alt="">
-    </div>  
-
-    <div class="row">
-        <img src="z4.png" alt="">
-    </div>  
-
-    <div class="text">
-    Graphic translations of photography of Camille Stassen. 
-    </div> 
-    <div class="text">
-    UV print on playing cards and plexiglass. 
-    </div> 
+    <div class="text1">
+        EXHIBITIONS
+        </div>  
     
+        <div class="text2">
+        Group show at gallery Ellipsis, Amsterdam (NL)
 
-    
+        </div> 
+
+
+ 
 
 
 </body>
