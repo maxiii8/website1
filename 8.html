@@ -66,22 +66,19 @@ table {
     font-family: f18;
     src: url("F1.8-Regular.otf");
 }
-
 @font-face{
     font-family: source;
     src: url("SourceCodeVariable-Roman.otf");
+}
+@font-face{
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
 }
 
 @font-face{
     font-family: pelinkacon;
     src: url("Pelinka-CondensedBold.otf");
 }
-
-@font-face{
-    font-family: pelinka;
-    src: url("Pelinka-Bold.otf");
-}
-
 body{
   
 
@@ -90,31 +87,33 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: none;
-    padding: 10 px;
+    font-family: pelinka;
+    src: url("Pelinka-CondensedBold");
+    font-size: 12pt;
+    background-color: white;
+    padding: 10 px white;
 }
 
 .row{
     padding: 40px;
+    padding-left: 60px;
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    padding-right: 200px;
 }
 
 .text{
+    grid-column: 1 / 3;
     font-family: pelinkacon;
-    src: url("Pelinka-CondensedBold.otf");
-    padding-top: 40px;
+    src: url("Pelinka-CondensedBold");
+    padding: 10px;
+    padding-left: 60px;
     color: black;
-    background-color: none;
-    text-align: center;
 }
 
 .absolute{
-    padding-top: 13px;
     position:fixed;
     display: inline block;
     width: 100%;
@@ -144,6 +143,7 @@ li a {
     .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     }
 }
 
@@ -155,96 +155,55 @@ li a {
     <div class="absolute">
         <ul>
             <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
-            <li style="float:right"><a class="active" href="info.html">INFO</a></li>
+            <li style="float:right"><a class="active" href="about.html">™</a></li>
         </ul>
     </div>
  
     
     <div class="grid">
-            
+
     <div class="row">
-        <a href="8.html">
         <img src="p2.jpeg" alt="">
-        </a>
     </div>
 
     <div class="text">
-    EE / IIV (2024)
-    </div>  
-
-    <div class="row">
-        <a href="1.html">
-        <img src="qm.png" alt="">
-        </a>
-    </div>
+    EE 
+    </div> 
 
     <div class="text">
-    QUE MONO (2024)
-    </div>  
-        
-    <div class="row">
-        <a href="2.html">
-        <img src="bw.png" alt="">
-        </a>
-    </div>
+    90x90 cm / 90x90 cm
+    </div> 
 
     <div class="text">
-    PRACTICE (2024)
-    </div>   
-
-    <div class="row">
-        <a href="3.html">
-        <img src="v3.png" alt="">
-        </a>
-    </div>
+    ink on canvas
+    </div> 
 
     <div class="text">
-    VAV GRAD SHOW (2022)
+    2024
     </div> 
 
     <div class="row">
-        <a href="4.html">
-        <img src="m.png" alt="">
-        </a>
+        <img src="p3.jpeg" alt="">
     </div>  
 
     <div class="text">
-    REAL FIT (2023)
-    </div>
-
-    <div class="row">
-        <a href="5.html">
-        <img src="wt.png" alt="">
-        </a>
-    </div>  
-
-    <div class="text">
-    PAPERBOUND (2022)
-    </div> 
-
-    <div class="row">
-        <a href="6.html">
-        <img src="cl3.png" alt="">
-        </a>
-    </div>  
-
-    <div class="text">
-    BABY VOMIT (2021)
-    </div>   
-
-    <div class="row">
-        <a href="7.html">
-        <img src="f3.png" alt="">
-        </a>
-    </div>  
-
-    <div class="text">
-    COPY (2021)
-    </div>  
-
-    <div class="text">
+        IIV
+        </div> 
     
-    </div> 
+        <div class="text">
+        90 X 90 / & 50x70 cm / 50x70 cm
+        </div> 
+    
+        <div class="text">
+        ink on canvas and mdf panel
+        </div> 
+    
+        <div class="text">
+        2024
+        </div> 
+
+
+
 
 
 </body>
