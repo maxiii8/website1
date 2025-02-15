@@ -63,15 +63,24 @@ table {
 }
 
 @font-face{
-    font-family: uncut;
-    src: url("UncutSans-Regular.ttf");
+    font-family: f18;
+    src: url("F1.8-Regular.otf");
 }
 
 @font-face{
-    font-family: xerox;
-    src: url("XeroxSansSerifNarrowFC.ttf");
+    font-family: source;
+    src: url("SourceCodeVariable-Roman.otf");
 }
 
+@font-face{
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold.otf");
+}
+
+@font-face{
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
+}
 
 body{
   
@@ -81,9 +90,8 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: white;
-    padding: 10 px white;
-    z-index: 2;
+    background-color: none;
+    padding: 10 px;
 }
 
 .row{
@@ -96,71 +104,46 @@ img{
     padding-right: 200px;
 }
 
-
-a{
+.text{
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold.otf");
     padding-top: 40px;
-    padding-left: 40px;
     color: black;
     background-color: none;
     text-align: center;
-    text-decoration: none;
-    font-family: uncut;
-    src: url("UncutSans-Regular.ttf");
-    font-size: 12pt;
-    z-index: 2
-}
-
-.text{
-    padding-top: 40px;
-    text-align: left;
-    text-decoration: none !important;
-    font-family: uncut;
-    src: url("UncutSans-Regular.ttf");
-    font-size: 12pt;
 }
 
 .absolute{
     padding-top: 13px;
     position:fixed;
-    right: 0px;
     display: inline block;
-    width: 50%;
-    text-decoration: none;
-    font-family: xerox;
-    src: url("XeroxSansSerifNarrowFC.ttf");
+    width: 100%;
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
     font-size: 12pt;
-    text-align: right;
-    padding-right: 10px;
-}
-
-li a{
-    color: black;
-    text-decoration: none;
-    font-family: xerox;
-    src: url("XeroxSansSerifNarrowFC.ttf");
-    font-size: 12pt;
-
 }
 
 ul {
-text-decoration: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  z-index: 1;
 }
 
 li {
+  
+}
+
+li a {
   display: block;
   padding: 25px;
-  z-index: 1;
+  color: black;
 }
 
 @media (min-width:700px) {
     .grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -171,40 +154,96 @@ li {
 <body>
     <div class="absolute">
         <ul>
-            <li><a class="active" class="absolute" href="info.html">max kessel</a></li>
+            <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
+            <li style="float:right"><a class="active" href="info.html">INFO</a></li>
         </ul>
     </div>
  
     
     <div class="grid">
             
+    <div class="row">
+        <a href="8.html">
+        <img src="p2.jpeg" alt="">
+        </a>
+    </div>
 
     <div class="text">
-        <a href="1.html">que mono</a>
+    EE / IIV (2024)
+    </div>  
+
+    <div class="row">
+        <a href="1.html">
+        <img src="qm.png" alt="">
+        </a>
+    </div>
+
+    <div class="text">
+    QUE MONO (2024)
+    </div>  
+        
+    <div class="row">
+        <a href="2.html">
+        <img src="bw.png" alt="">
+        </a>
+    </div>
+
+    <div class="text">
+    PRACTICE (2024)
+    </div>   
+
+    <div class="row">
+        <a href="3.html">
+        <img src="v3.png" alt="">
+        </a>
+    </div>
+
+    <div class="text">
+    VAV GRAD SHOW (2022)
     </div> 
 
-    <div class="text">
-        <a href="2.html">translation</a>
-    </div> 
+    <div class="row">
+        <a href="4.html">
+        <img src="m.png" alt="">
+        </a>
+    </div>  
 
     <div class="text">
-        <a href="3.html">vav grad show</a>
-    </div> 
+    REAL FIT (2023)
+    </div>
+
+    <div class="row">
+        <a href="5.html">
+        <img src="wt.png" alt="">
+        </a>
+    </div>  
 
     <div class="text">
-        <a href="4.html">real fit</a>
+    PAPERBOUND (2022)
     </div> 
 
-    <div class="text">
-        <a href="5.html">paperbound</a>
-    </div> 
+    <div class="row">
+        <a href="6.html">
+        <img src="cl3.png" alt="">
+        </a>
+    </div>  
 
     <div class="text">
-        <a href="6.html">baby vomit</a>
-    </div> 
+    BABY VOMIT (2021)
+    </div>   
+
+    <div class="row">
+        <a href="7.html">
+        <img src="f3.png" alt="">
+        </a>
+    </div>  
 
     <div class="text">
-        <a href="7.html">copy</a>
+    COPY (2021)
+    </div>  
+
+    <div class="text">
+    
     </div> 
 
 
