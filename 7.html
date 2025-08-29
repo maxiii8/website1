@@ -94,24 +94,27 @@ body{
 }
 
 .row{
-    padding: 40px;
-    padding-left: 60px;
+    padding-left: 40px;
+    padding-top: 100px;
 }
 
 img{
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
 .text{
     font-family: pelinkacon;
     src: url("Pelinka-CondensedBold");
-    padding: 40px;
-    padding-left: 60px;
+    padding-left: 40px;
+    padding-top: 40px;
     color: black;
+    padding-bottom: 100px;
+    max-width: 60%;
 }
 
 .absolute{
+    padding-top: 13px;
     position:fixed;
     display: inline block;
     width: 100%;
@@ -138,11 +141,58 @@ li a {
 }
 
 @media (min-width:700px) {
+
     .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     }
+
+    .row{
+    padding-left: 60px;
+    padding-top: 100px;
+    }
+
+    img{
+    max-width: 60%;
+    height: auto;
+}
+
+.text{
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold");
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    color: black;
+    max-width: 80%;
+}
+
+.absolute{
+    padding-top: 13px;
+    position:fixed;
+    display: inline block;
+    width: 100%;
+    font-family: pelinka;
+    src: url("Pelinka-Bold.otf");
+    font-size: 12pt;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+  
+}
+
+li a {
+    display: block;
+    padding: 25px;
+    color: black;
+}
 }
 
 
@@ -152,8 +202,8 @@ li a {
 <body>
     <div class="absolute">
         <ul>
-            <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
-            <li style="float:right"><a class="active" href="about.html">™</a></li>
+            <li style="float:left"><a class="active" href="index.html">SELECTED WORKS</a></li>
+            <li style="float:right"><a class="active" href="about.html">INFO</a></li>
         </ul>
     </div>
  
@@ -161,23 +211,23 @@ li a {
     <div class="grid">
 
     <div class="row">
-        <img src="f1.png" alt="">
+        <img src="f1.jpg" alt="">
     </div>
 
     <div class="row">
-        <img src="f2.png" alt="">
+        <img src="f2.jpg" alt="">
     </div>
 
     <div class="row">
-        <img src="f3.png" alt="">
+        <img src="f3.jpg" alt="">
     </div>  
 
     <div class="row">
-        <img src="f4.png" alt="">
+        <img src="f4.jpg" alt="">
     </div>  
 
     <div class="text">
-    Archive of leisure spaces, experiment in copying
+    Archive of leisure spaces, experiment in copying. Stencil printed book made on a xerox printer.
     </div> 
 
 

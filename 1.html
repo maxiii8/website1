@@ -90,36 +90,51 @@ body{
     font-family: pelinka;
     src: url("Pelinka-CondensedBold");
     font-size: 12pt;
-    background-color: white;
-    padding: 10 px white;
 }
 
-.row{
-    padding: 40px;
-    padding-left: 60px;
-}
-
-img{
-    max-width: 100%;
+video{
+    max-width: 80%;
     height: auto;
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 60px;
 }
 
 .text{
-    grid-column: 1 / 3;
     font-family: pelinkacon;
     src: url("Pelinka-CondensedBold");
-    padding: 10px;
-    padding-left: 60px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     color: black;
+    max-width: 80%;
+}
+
+.text2{
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold");
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    color: black;
+    max-width: 80%;
 }
 
 .absolute{
-    position:fixed;
+    padding-top: 13px;
+    position: fixed;
     display: inline block;
     width: 100%;
     font-family: pelinka;
     src: url("Pelinka-Bold.otf");
     font-size: 12pt;
+}
+
+img{
+    max-width: 60%;
+    height: auto;
+    padding: 40px;
+    padding-left:40px;
 }
 
 ul {
@@ -140,11 +155,47 @@ li a {
 }
 
 @media (min-width:700px) {
+
     .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr;
     }
+
+    img{
+    max-width: 60%;
+    height: auto;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+
+    .text{
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold");
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: black;
+    max-width: 80%;
+    }
+
+    .text2{
+    font-family: pelinkacon;
+    src: url("Pelinka-CondensedBold");
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    color: black;
+    max-width: 80%;
+    }
+
+    video{
+    max-width: 80%;
+    height: auto;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
 }
 
 
@@ -154,47 +205,44 @@ li a {
 <body>
     <div class="absolute">
         <ul>
-            <li style="float:left"><a class="active" href="index.html">MAX KESSEL</a></li>
-            <li style="float:right"><a class="active" href="about.html">™</a></li>
+            <li style="float:left"><a class="active" href="index.html">SELECTED WORKS</a></li>
+            <li style="float:right"><a class="active" href="info.html">ABOUT</a></li>
         </ul>
     </div>
  
     
     <div class="grid">
 
-    <div class="row">
-        <img src="q1.jpg" alt="">
+    <div>
+    <video autoplay muted>
+        <source src="qm.mp4" type="video/mp4">
+    </video>
     </div>
 
-    <div class="text">
-    </div> 
+    <div class="grid">
+        <img src="q1.jpg" alt="">
+    </div>  
 
-    <div class="row">
+    <div class="grid">
         <img src="q2.jpg" alt="">
     </div>  
 
-    <div class="text">
-    </div> 
-
-    <div class="row">
+    <div class="grid">
         <img src="q3.jpg" alt="">
     </div>  
 
     <div class="text">
-    QUE MONO
+    QUE MONO 2024
     </div> 
 
-    <div class="text">
-    Edited and designed by Max Kessel. 
+    <div class="text2">
+    This is graphic design for Clara Rojas' text 'Que Mono'. The text was turned into a publication resembling a children's book. The text explores the realm of memories, symbols and how they are affected by the
+    pass of time. Specifically it looks at her ongoing relationship with images, objects and
+    imaginaries that belong to her childhood.
     </div> 
 
-    <div class="text">
-    Text by Clara Rojas. 
-    </div> 
+    </div>
 
-    <div class="text">
-    Artist book and thesis
-    </div> 
 
 
 
